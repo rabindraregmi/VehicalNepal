@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bb"
+
+    >
+<ScrollView
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="WELCOME"
+        android:textSize="40sp"
+        android:textColor="#FFF"
+        android:textAlignment="center"
+        />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_below="@+id/welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:hint="Username"
+        android:textColorHint="#ffffff"
+        android:inputType="textPersonName"
+        android:maxLines="1"
+        android:background="@drawable/background_login"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:hint="Password"
+        android:textColorHint="#fff"
+        android:gravity="center"
+        android:layout_below="@id/username"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:maxLength="8"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background_login"
+        android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
+
+        />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:text="Login"
+        android:layout_marginTop="9dp"
+        android:background="@drawable/btn_selector"
+        android:textColor="#ffffff"
+        android:padding="10dp"
+
+
+        />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_below="@id/login"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_selector"
+        />
+
+    </RelativeLayout>
+</ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rabindra.vehicalnepal.Activities.HomeActivity"
+   android:background="#e6e6e6"
+    >
+   <include android:id="@+id/image_slider"
+        layout="@layout/image_slider_layout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+    </include>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@mipmap/aa"
+        android:text="Catagories"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        />
+    <include android:id="@+id/pic"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        layout="@layout/card_slider_layout"></include>
+
+   <android.support.constraint.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:background="@mipmap/aa"
+       >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="All stories"
+        android:textSize="15sp"
+        android:id="@+id/text2"
+        />
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           app:layout_constraintRight_toRightOf="parent"
+           android:text="See All"
+           android:id="@+id/catagories_see_all2"
+           android:clickable="true"
+           />
+   </android.support.constraint.ConstraintLayout>
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+    <include android:id="@+id/card"
+        layout="@layout/card_slider"></include>
+
+</HorizontalScrollView>
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/aa"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="All stories"
+            android:textSize="15sp"
+            android:id="@+id/text3"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="See All"
+            android:id="@+id/catagories_see_all3"
+            android:clickable="true"
+            />
+    </android.support.constraint.ConstraintLayout>
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+        <include android:id="@+id/card1"
+            layout="@layout/card_slider"
+            ></include>
+
+    </HorizontalScrollView>
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/aa"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="All stories"
+            android:textSize="15sp"
+            android:id="@+id/text4"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="See All"
+            android:id="@+id/catagories_see_all4"
+            android:clickable="true"
+            />
+    </android.support.constraint.ConstraintLayout>
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+        <include android:id="@+id/card2"
+            layout="@layout/card_slider"></include>
+
+    </HorizontalScrollView>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/aa"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="All stories"
+            android:textSize="15sp"
+            android:id="@+id/text"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="See All"
+            android:id="@+id/catagories_see_all"
+            android:clickable="true"
+            />
+    </android.support.constraint.ConstraintLayout>
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+        <include android:id="@+id/card3"
+            layout="@layout/card_slider"></include>
+
+    </HorizontalScrollView>
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+</LinearLayout>
+</ScrollView>

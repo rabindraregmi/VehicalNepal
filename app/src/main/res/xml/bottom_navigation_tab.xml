@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+        <tab
+            id="@+id/Home_tab"
+            icon="@drawable/ic_home_black_24dp"
+            title="Home" />
+        <tab
+            id="@+id/Compare"
+            icon="@drawable/ic_compare_arrows_black_24dp"
+            title="Compare" />
+        <tab
+            id="@+id/User"
+            icon="@drawable/ic_person_black_24dp"
+            title="User" />
+    </tabs>
