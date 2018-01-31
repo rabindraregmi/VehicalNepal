@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -15,12 +16,97 @@
             android:id="@+id/mainGrid"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="8"
-            android:alignmentMode="alignMargins"
-            android:columnCount="3"
+            android:layout_weight="1"
+            android:alignmentMode="alignBounds"
+            android:columnCount="4"
             android:columnOrderPreserved="false"
-            android:padding="14dp"
-            android:rowCount="3">
+            android:rowOrderPreserved="false"
+            android:padding="10dp"
+            android:rowCount="1">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/acebritish_logo"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:clickable="true"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:orientation="vertical"
+                    >
+
+
+
+                    <ImageView
+                        android:layout_width="@dimen/grid_view_image_width"
+                        android:layout_height="@dimen/grid_view_image_height"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@mipmap/acebritish"
+                        tools:layout_editor_absoluteX="4dp"
+                        tools:layout_editor_absoluteY="0dp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ace British"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="10sp"
+
+                        android:layout_marginTop="5dp"
+                        />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <!-- Column 2 -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/aprilia_logo"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:clickable="true"
+                android:focusable="true"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:orientation="vertical"
+                    >
+
+
+
+                    <ImageView
+                        android:layout_width="@dimen/grid_view_image_width"
+                        android:layout_height="@dimen/grid_view_image_height"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@mipmap/aprilia"
+                        tools:layout_editor_absoluteX="4dp"
+                        tools:layout_editor_absoluteY="0dp" />
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Aprilia"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="10sp"
+
+                        android:layout_marginTop="5dp"
+                        />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!-- COl 3 -->
 
             <android.support.v7.widget.CardView
                 android:id="@+id/bajaj_logo"
@@ -28,16 +114,14 @@
                 android:layout_height="0dp"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
-                app:cardElevation="8dp"
                 android:clickable="true"
                 android:focusable="true"
                 >
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_margin="6dp"
                     android:orientation="vertical"
                     >
 
@@ -51,6 +135,7 @@
                         tools:layout_editor_absoluteX="4dp"
                         tools:layout_editor_absoluteY="0dp" />
                     <TextView
+                        android:layout_gravity="center"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Bajaj"
@@ -63,417 +148,784 @@
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
-            <!-- Column 2 -->
+
             <android.support.v7.widget.CardView
+                android:id="@+id/benelli_logo"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                 android:clickable="true"
                 android:focusable="true"
-                android:id="@+id/royal_enfield_logo"
-                app:cardElevation="8dp"
-
                 >
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_margin="16dp"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    >
+
+
 
                     <ImageView
                         android:layout_width="@dimen/grid_view_image_width"
                         android:layout_height="@dimen/grid_view_image_height"
                         android:layout_gravity="center_horizontal"
-                        android:src="@mipmap/royalenfield" />
-
+                        android:src="@mipmap/benelli"
+                        tools:layout_editor_absoluteX="4dp"
+                        tools:layout_editor_absoluteY="0dp" />
                     <TextView
+                        android:layout_gravity="center"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Royal Enfield"
+                        android:text="Benelli"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
                         android:textSize="10sp"
-                         />
 
+                        android:layout_marginTop="5dp"
+                        />
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
 
-
-            <!-- Row 2 -->
-
-            <!-- Column 1 -->
             <android.support.v7.widget.CardView
+                android:id="@+id/crossfire_logo"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
-                android:id="@+id/ducati"
-                app:cardElevation="8dp"
                 android:clickable="true"
                 android:focusable="true"
                 >
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_margin="16dp"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    >
+
+
 
                     <ImageView
                         android:layout_width="@dimen/grid_view_image_width"
                         android:layout_height="@dimen/grid_view_image_height"
                         android:layout_gravity="center_horizontal"
-                        android:src="@mipmap/ducati" />
-
+                        android:src="@mipmap/crossfire"
+                        tools:layout_editor_absoluteX="4dp"
+                        tools:layout_editor_absoluteY="0dp" />
                     <TextView
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bajaj"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="10sp"
+
+                        android:layout_marginTop="5dp"
+                        />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:id="@+id/ducati_logo"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:clickable="true"
+                android:focusable="true"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:orientation="vertical"
+                    >
+
+
+
+                    <ImageView
+                        android:layout_width="@dimen/grid_view_image_width"
+                        android:layout_height="@dimen/grid_view_image_height"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@mipmap/ducati"
+                        tools:layout_editor_absoluteX="4dp"
+                        tools:layout_editor_absoluteY="0dp" />
+                    <TextView
+                        android:layout_gravity="center"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Ducati"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
                         android:textSize="10sp"
-                        android:layout_marginTop="5dp"
-                         />
 
+                        android:layout_marginTop="5dp"
+                        />
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
 
-            <!-- Column 2 -->
             <android.support.v7.widget.CardView
+                android:id="@+id/hartford_logo"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
-                android:id="@+id/hero"
-                app:cardCornerRadius="8dp"
-                app:cardElevation="8dp">
+                android:clickable="true"
+                android:focusable="true"
+                >
 
                 <LinearLayout
-                    android:layout_width="58dp"
-                    android:layout_height="55dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal|center_vertical"
+                    android:orientation="vertical"
+                    >
 
-                    android:orientation="vertical">
+
 
                     <ImageView
                         android:layout_width="@dimen/grid_view_image_width"
                         android:layout_height="@dimen/grid_view_image_height"
                         android:layout_gravity="center_horizontal"
-                        android:src="@mipmap/hero" />
+                        android:src="@mipmap/hartford"
+                        tools:layout_editor_absoluteX="4dp"
+                        tools:layout_editor_absoluteY="0dp" />
 
                     <TextView
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hartford"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="10sp"
+                        android:layout_marginTop="5dp"
+                        />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/hero_logo"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:clickable="true"
+                android:focusable="true"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:orientation="vertical"
+                    >
+
+
+
+                    <ImageView
+                        android:layout_width="@dimen/grid_view_image_width"
+                        android:layout_height="@dimen/grid_view_image_height"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@mipmap/hero"
+                        tools:layout_editor_absoluteX="4dp"
+                        tools:layout_editor_absoluteY="0dp" />
+                    <TextView
+                        android:layout_gravity="center"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Hero"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
                         android:textSize="10sp"
-                         />
 
+                        android:layout_marginTop="5dp"
+                        />
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
 
-
-            <!-- Row 2 -->
-
-            <!-- Column 1 -->
             <android.support.v7.widget.CardView
+                android:id="@+id/honda_logo"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
-                app:cardCornerRadius="8dp"
-                android:id="@+id/suzuki_logo"
                 android:clickable="true"
                 android:focusable="true"
-                app:cardElevation="8dp">
+                >
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_margin="16dp"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    >
+
+
 
                     <ImageView
                         android:layout_width="@dimen/grid_view_image_width"
                         android:layout_height="@dimen/grid_view_image_height"
                         android:layout_gravity="center_horizontal"
-                        android:src="@mipmap/suzuki" />
-
+                        android:src="@mipmap/honda"
+                        tools:layout_editor_absoluteX="4dp"
+                        tools:layout_editor_absoluteY="0dp" />
                     <TextView
+                        android:layout_gravity="center"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Suzuki"
+                        android:text="Honda"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
                         android:textSize="10sp"
-                         />
 
+                        android:layout_marginTop="5dp"
+                        />
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
 
-            <!-- Column 2 -->
             <android.support.v7.widget.CardView
+                android:id="@+id/husqvarna_logo"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
-android:id="@+id/ktm_logo"
                 android:clickable="true"
                 android:focusable="true"
-                app:cardCornerRadius="8dp"
-                app:cardElevation="8dp">
+                >
 
                 <LinearLayout
-                    android:layout_width="@dimen/grid_view_image_width"
-                    android:layout_height="@dimen/grid_view_image_height"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_margin="16dp"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    >
+
+
 
                     <ImageView
                         android:layout_width="@dimen/grid_view_image_width"
                         android:layout_height="@dimen/grid_view_image_height"
                         android:layout_gravity="center_horizontal"
-                        android:src="@mipmap/ktm" />
-
+                        android:src="@mipmap/husqvarna"
+                        tools:layout_editor_absoluteX="4dp"
+                        tools:layout_editor_absoluteY="0dp" />
                     <TextView
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Husqvarna"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="10sp"
+                        android:layout_marginTop="5dp" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/italjet_logo"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:clickable="true"
+                android:focusable="true"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:orientation="vertical"
+                    >
+
+
+
+                    <ImageView
+                        android:layout_width="@dimen/grid_view_image_width"
+                        android:layout_height="@dimen/grid_view_image_height"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@mipmap/italjet"
+                        tools:layout_editor_absoluteX="4dp"
+                        tools:layout_editor_absoluteY="0dp" />
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Italijet"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="10sp"
+
+                        android:layout_marginTop="5dp"
+                        />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/ktm_logo"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:clickable="true"
+                android:focusable="true"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:orientation="vertical"
+                    >
+
+
+
+                    <ImageView
+                        android:layout_width="@dimen/grid_view_image_width"
+                        android:layout_height="@dimen/grid_view_image_height"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@mipmap/ktm"
+                        tools:layout_editor_absoluteX="4dp"
+                        tools:layout_editor_absoluteY="0dp" />
+                    <TextView
+                        android:layout_gravity="center"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="KTM"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
                         android:textSize="10sp"
-                        android:textStyle="bold" />
 
+                        android:layout_marginTop="5dp"
+                        />
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
+                android:id="@+id/mahindra_logo"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
-                android:id="@+id/tvs_logo"
                 android:clickable="true"
                 android:focusable="true"
-
-                app:cardCornerRadius="8dp"
-                app:cardElevation="8dp">
+                >
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_margin="16dp"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    >
+
+
 
                     <ImageView
                         android:layout_width="@dimen/grid_view_image_width"
                         android:layout_height="@dimen/grid_view_image_height"
                         android:layout_gravity="center_horizontal"
-                        android:src="@mipmap/tvslogo" />
-
+                        android:src="@mipmap/mahindra"
+                        tools:layout_editor_absoluteX="4dp"
+                        tools:layout_editor_absoluteY="0dp" />
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="TVS"
-                        android:textAlignment="center"
-                        android:textColor="@android:color/black"
-                        android:textSize="10sp"
-                         />
-
-                </LinearLayout>
-
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:id="@+id/mahindra"
-                android:clickable="true"
-                android:focusable="true"
-
-                app:cardCornerRadius="8dp"
-                app:cardElevation="8dp">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_margin="16dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="@dimen/grid_view_image_width"
-                        android:layout_height="@dimen/grid_view_image_height"
-                        android:layout_gravity="center_horizontal"
-                        android:src="@mipmap/mahindra" />
-
-                    <TextView
+                        android:layout_gravity="center"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Mahindra"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
                         android:textSize="10sp"
-                         />
 
+                        android:layout_marginTop="5dp"
+                        />
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/mvaugusta_logo"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:clickable="true"
+                android:focusable="true"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:orientation="vertical"
+                    >
+
+
+
+                    <ImageView
+                        android:layout_width="@dimen/grid_view_image_width"
+                        android:layout_height="@dimen/grid_view_image_height"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@mipmap/mvaugusta"
+                        tools:layout_editor_absoluteX="4dp"
+                        tools:layout_editor_absoluteY="0dp" />
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mvaugusta"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="10sp"
+
+                        android:layout_marginTop="5dp"
+                        />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:id="@+id/royalenfield_logo"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:clickable="true"
+                android:focusable="true"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:orientation="vertical"
+                    >
+
+
+
+                    <ImageView
+                        android:layout_width="@dimen/grid_view_image_width"
+                        android:layout_height="@dimen/grid_view_image_height"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@mipmap/royalenfield"
+                        tools:layout_editor_absoluteX="4dp"
+                        tools:layout_editor_absoluteY="0dp" />
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Royal Enfield"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="10sp"
+
+                        android:layout_marginTop="5dp"
+                        />
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
+                android:id="@+id/suzuki_logo"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
-                android:id="@+id/yamaha_logo"
-
-                app:cardCornerRadius="8dp"
-                app:cardElevation="8dp">
+                android:clickable="true"
+                android:focusable="true"
+                >
 
                 <LinearLayout
-                    android:layout_width="@dimen/grid_view_image_width"
-                    android:layout_height="@dimen/grid_view_image_height"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_margin="16dp"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    >
+
+
 
                     <ImageView
+                        android:layout_width="@dimen/grid_view_image_width"
+                        android:layout_height="@dimen/grid_view_image_height"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@mipmap/suzuki"
+                        tools:layout_editor_absoluteX="4dp"
+                        tools:layout_editor_absoluteY="0dp" />
+                    <TextView
+                        android:layout_gravity="center"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:src="@mipmap/yamahalogo" />
+                        android:text="Suzuki"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="10sp"
 
+                        android:layout_marginTop="5dp"
+                        />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/sym_logo"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:clickable="true"
+                android:focusable="true"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:orientation="vertical"
+                    >
+
+
+
+                    <ImageView
+                        android:layout_width="@dimen/grid_view_image_width"
+                        android:layout_height="@dimen/grid_view_image_height"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@mipmap/sym"
+                        tools:layout_editor_absoluteX="4dp"
+                        tools:layout_editor_absoluteY="0dp" />
                     <TextView
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SYM"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="10sp"
+
+                        android:layout_marginTop="5dp"
+                        />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/terra_logo"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:clickable="true"
+                android:focusable="true"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:orientation="vertical"
+                    >
+
+
+
+                    <ImageView
+                        android:layout_width="@dimen/grid_view_image_width"
+                        android:layout_height="@dimen/grid_view_image_height"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@mipmap/terra"
+                        tools:layout_editor_absoluteX="4dp"
+                        tools:layout_editor_absoluteY="0dp" />
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Terra"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="10sp"
+
+                        android:layout_marginTop="5dp"
+                        />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/tvs_logo"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:clickable="true"
+                android:focusable="true"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:orientation="vertical"
+                    >
+
+
+
+                    <ImageView
+                        android:layout_width="@dimen/grid_view_image_width"
+                        android:layout_height="@dimen/grid_view_image_height"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@mipmap/tvslogo"
+                        tools:layout_editor_absoluteX="4dp"
+                        tools:layout_editor_absoluteY="0dp" />
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TVS"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="10sp"
+
+                        android:layout_marginTop="5dp"
+                        />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/um_logo"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:clickable="true"
+                android:focusable="true"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:orientation="vertical"
+                    >
+
+
+
+                    <ImageView
+                        android:layout_width="@dimen/grid_view_image_width"
+                        android:layout_height="@dimen/grid_view_image_height"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@mipmap/um"
+                        tools:layout_editor_absoluteX="4dp"
+                        tools:layout_editor_absoluteY="0dp" />
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="UM"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="10sp"
+
+                        android:layout_marginTop="5dp"
+                        />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/vespa_logo"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:clickable="true"
+                android:focusable="true"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:orientation="vertical"
+                    >
+
+
+
+                    <ImageView
+                        android:layout_width="@dimen/grid_view_image_width"
+                        android:layout_height="@dimen/grid_view_image_height"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@mipmap/vespa"
+                        tools:layout_editor_absoluteX="4dp"
+                        tools:layout_editor_absoluteY="0dp" />
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Vespa"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="10sp"
+
+                        android:layout_marginTop="5dp"
+                        />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/yamaha_logo"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:clickable="true"
+                android:focusable="true"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:orientation="vertical"
+                    >
+
+
+
+                    <ImageView
+                        android:layout_width="@dimen/grid_view_image_width"
+                        android:layout_height="@dimen/grid_view_image_height"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@mipmap/yamahalogo"
+                        tools:layout_editor_absoluteX="4dp"
+                        tools:layout_editor_absoluteY="0dp" />
+                    <TextView
+                        android:layout_gravity="center"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Yamaha"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
                         android:textSize="10sp"
-                         />
 
+                        android:layout_marginTop="5dp"
+                        />
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
 
-            <android.support.v7.widget.CardView
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:cardCornerRadius="8dp"
-                app:cardElevation="8dp">
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_margin="16dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="@dimen/grid_view_image_width"
-                        android:layout_height="@dimen/grid_view_image_height"
-                        android:layout_gravity="center_horizontal"
-                        android:src="@mipmap/bike" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Calendars"
-                        android:textAlignment="center"
-                        android:textColor="@android:color/black"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
-
-                </LinearLayout>
-
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-
-                app:cardCornerRadius="8dp"
-                app:cardElevation="8dp">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_margin="16dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="@dimen/grid_view_image_width"
-                        android:layout_height="@dimen/grid_view_image_height"
-                        android:layout_gravity="center_horizontal"
-                        android:src="@mipmap/bike2" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Calendars"
-                        android:textAlignment="center"
-                        android:textColor="@android:color/black"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
-
-                </LinearLayout>
-
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-
-                app:cardCornerRadius="8dp"
-                app:cardElevation="8dp">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_margin="16dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="@dimen/grid_view_image_width"
-                        android:layout_height="@dimen/grid_view_image_height"
-                        android:layout_gravity="center_horizontal"
-                        android:src="@mipmap/bike" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Calendars"
-                        android:textAlignment="center"
-                        android:textColor="@android:color/black"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
-
-                </LinearLayout>
-
-            </android.support.v7.widget.CardView>
 
         </GridLayout>
 
