@@ -19,6 +19,7 @@
             android:columnCount="3"
             android:columnOrderPreserved="false"
             android:rowOrderPreserved="false"
+            android:rowCount="7"
             android:padding="10dp">
 
             <android.support.v7.widget.CardView
@@ -265,8 +266,8 @@
 
             <android.support.v7.widget.CardView
                 android:id="@+id/greatwall_logo"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                 android:clickable="true"
@@ -385,8 +386,8 @@
 
             <android.support.v7.widget.CardView
                 android:id="@+id/kia_logo"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
+                android:layout_height="100dp"
+                android:layout_width="50dp"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                 android:clickable="true"
@@ -399,9 +400,6 @@
                     android:layout_gravity="center_horizontal|center_vertical"
                     android:orientation="vertical"
                     >
-
-
-
                     <ImageView
                         android:layout_width="@dimen/grid_view_image_width"
                         android:layout_height="@dimen/grid_view_image_height"
@@ -413,7 +411,7 @@
                         android:layout_gravity="center"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Italijet"
+                        android:text="KIA"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
                         android:textSize="10sp"
@@ -874,8 +872,9 @@
 
             <android.support.v7.widget.CardView
                 android:id="@+id/suzuki_car_logo"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
+                android:layout_height="100dp"
+                android:layout_width="50dp"
+
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                 android:clickable="true"

@@ -21,7 +21,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Catagories"
+        android:text="Categories"
         android:textSize="20sp"
         android:textColor="#000000"
         android:padding="10dp"
