@@ -31,7 +31,7 @@
     <include android:id="@+id/pic"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        layout="@layout/card_slider_layout"></include>
+        layout="@layout/catagories"></include>
 
    <android.support.constraint.ConstraintLayout
        android:layout_width="match_parent"

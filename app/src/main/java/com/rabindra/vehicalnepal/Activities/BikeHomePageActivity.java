@@ -7,7 +7,6 @@ import android.support.v7.widget.CardView;
 import android.util.Log;
 import android.view.View;
 import android.widget.GridLayout;
-import android.widget.Toast;
 
 import com.rabindra.vehicalnepal.R;
 
@@ -45,7 +44,7 @@ public class BikeHomePageActivity extends AppCompatActivity {
         bikeList.add("um");
         bikeList.add("vespa");
         bikeList.add("yamaha");
-        setContentView(R.layout.grid_view);
+        setContentView(R.layout.bike_brand_list);
         mainGrid = findViewById(R.id.mainGrid);
         setSingleEvent(mainGrid);
     }

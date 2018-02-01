@@ -14,7 +14,7 @@ public class BikeListItemActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.list_card_view);
+        setContentView(R.layout.bike_list);
 
     }
 
