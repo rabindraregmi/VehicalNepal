@@ -7,7 +7,9 @@
         android:id="@+id/home"
         android:color="@color/colorPrimary"
         android:icon="@drawable/ic_home_black_24dp"
-        android:title="Home" />
+        android:title="Home"
+        
+        />
     <item
         android:id="@+id/compare"
         android:color="@android:color/holo_green_dark"

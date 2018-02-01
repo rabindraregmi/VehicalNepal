@@ -128,7 +128,7 @@
                         android:layout_gravity="center"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Bajaj"
+                        android:text="Datsun"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
                         android:textSize="10sp"
@@ -171,7 +171,7 @@
                         android:layout_gravity="center"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Benelli"
+                        android:text="Fiat"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
                         android:textSize="10sp"
@@ -212,45 +212,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Ford"
-                        android:textAlignment="center"
-                        android:textColor="@android:color/black"
-                        android:textSize="10sp"
-
-                        android:layout_marginTop="5dp"
-                        />
-                </LinearLayout>
-
-            </android.support.v7.widget.CardView>
-            <android.support.v7.widget.CardView
-                android:id="@+id/ducati_logo"
-
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:clickable="true"
-                android:focusable="true"
-                >
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:orientation="vertical"
-                    >
-
-
-
-                    <ImageView
-                        android:layout_width="@dimen/grid_view_image_width"
-                        android:layout_height="@dimen/grid_view_image_height"
-                        android:layout_gravity="center_horizontal"
-                        android:src="@mipmap/ducati"
-                        tools:layout_editor_absoluteX="4dp"
-                        tools:layout_editor_absoluteY="0dp" />
-                    <TextView
-                        android:layout_gravity="center"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Ducati"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
                         android:textSize="10sp"
