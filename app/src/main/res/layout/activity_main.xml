@@ -39,11 +39,6 @@
         android:id="@+id/welcome"
         android:layout_weight="1"
         />
-
-
-
-
-
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/navigation"
         android:layout_width="match_parent"
