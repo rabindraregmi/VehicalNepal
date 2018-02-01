@@ -48,6 +48,9 @@
                 android:text="Name"
                 android:textColor="#101010"
                 android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+
 
                 />
 
@@ -61,6 +64,7 @@
                 android:text="Price"
                 android:textColor="#000000"
                 android:textSize="15sp"
+                android:layout_gravity="center"
                 />
         </LinearLayout>
     </android.support.v7.widget.CardView>
@@ -91,6 +95,7 @@
                 android:text="Body/ Exterior Design/ Dimensions"
                 android:textSize="20sp"
                 android:textStyle="bold"
+                android:background="#dedede"
 
                 />
 
@@ -117,6 +122,7 @@ fdsfsdfsdsdffds
                 android:text="Chassis / Brakes / Suspensions"
                 android:textSize="20sp"
                 android:textStyle="bold"
+                android:background="#dedede"
 
                 />
 
@@ -144,6 +150,7 @@ fdsfsdfsdsdffds
                 android:text="Engine Specifications"
                 android:textSize="20sp"
                 android:textStyle="bold"
+                android:background="#dedede"
 
                 />
 
@@ -170,6 +177,7 @@ fdsfsdfsdsdffds
                 android:text="Performance"
                 android:textSize="20sp"
                 android:textStyle="bold"
+                android:background="#dedede"
 
                 />
 
@@ -196,6 +204,7 @@ fdsfsdfsdsdffds
                 android:text="Transmission"
                 android:textSize="20sp"
                 android:textStyle="bold"
+                android:background="#dedede"
 
                 />
 
