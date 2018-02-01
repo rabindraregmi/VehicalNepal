@@ -2,6 +2,7 @@ package com.rabindra.vehicalnepal.Activities;
 
 import android.app.FragmentTransaction;
 import android.content.DialogInterface;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.IdRes;
 import android.support.annotation.NonNull;
@@ -15,14 +16,17 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.GridLayout;
+import android.widget.SearchView;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.Toolbar;
 
 import com.daimajia.slider.library.Animations.DescriptionAnimation;
 import com.daimajia.slider.library.SliderLayout;
 import com.daimajia.slider.library.SliderTypes.BaseSliderView;
 import com.daimajia.slider.library.SliderTypes.TextSliderView;
 import com.daimajia.slider.library.Tricks.ViewPagerEx;
+import com.miguelcatalan.materialsearchview.MaterialSearchView;
 import com.rabindra.vehicalnepal.Fragments.Home;
 import com.rabindra.vehicalnepal.Fragments.UserInfoFragment;
 import com.rabindra.vehicalnepal.R;
@@ -40,6 +44,8 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
     private SliderLayout mDemoSlider;
     GridLayout mainGrid;
     CardView cardView;
+    android.support.v7.widget.Toolbar toolbar;
+    MaterialSearchView searchView;
 
 
     Home home=new Home();
@@ -81,6 +87,25 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
+        android.support.v7.widget.Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Vehicle Nepal");
+        toolbar.setTitleTextColor(Color.parseColor("#FFFFFF"));
+
+        searchView = (MaterialSearchView)findViewById(R.id.search_view);
+
+        searchView.setOnSearchViewListener(new MaterialSearchView.SearchViewListener() {
+            @Override
+            public void onSearchViewShown() {
+
+            }
+
+            @Override
+            public void onSearchViewClosed() {
+
+            }
+        });
+
 
     }
 
@@ -88,6 +113,8 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.home_menu, menu);
+        MenuItem item = menu.findItem(R.id.action_search);
+        searchView.setMenuItem(item);
         return true;
     }
 

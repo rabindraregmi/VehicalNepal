@@ -15,7 +15,8 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Activities.MainActivity"
-            android:label="Vehical Nepal">
+            android:label="Vehical Nepal"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -30,7 +31,9 @@
         <activity
             android:name=".Activities.BikeListItemActivity"
             android:label="@string/title_activity_bike_list_item"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Activities.BrandbikeList" />
+        <activity android:name=".Activities.BikeDetailPageActivity"></activity>
     </application>
 
 </manifest>

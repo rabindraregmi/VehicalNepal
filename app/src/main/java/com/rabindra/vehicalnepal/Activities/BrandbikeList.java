@@ -1,14 +1,16 @@
-package com.rock.vehicle;
+package com.rabindra.vehicalnepal.Activities;
 
+import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.view.ActionMode;
 import android.util.Log;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import com.androidquery.AQuery;
 import com.androidquery.callback.AjaxCallback;
 import com.androidquery.callback.AjaxStatus;
+import com.rabindra.vehicalnepal.R;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -18,16 +20,20 @@ import java.util.ArrayList;
 
 public class BrandbikeList extends AppCompatActivity {
     AQuery aQuery;
-    String intentExtra = getIntent().getStringExtra("companyName");
     String baseUrl="http://192.168.100.199/vehicle/new/bikeData/";
-    TextView textView;
+    String intentExtra = "fail";
+    ListView container;
+    Context context;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.bike_list);
+        container = findViewById(R.id.listConatainer);
+        context = this;
         aQuery=new AQuery(this);
-        textView= (TextView) findViewById(R.id.test);
-        fetchurl(baseUrl+intentExtra);
+        intentExtra= getIntent().getStringExtra("url");
+        Log.v("logmessage",intentExtra);
+        fetchurl(baseUrl+intentExtra+"Data");
 
     }
     public void fetchurl(String url)
@@ -37,6 +43,7 @@ public class BrandbikeList extends AppCompatActivity {
             public void callback(String url, JSONArray object, AjaxStatus status) {
                 super.callback(url, object, status);
                 ArrayList<VehicleInfo> vehicleList = new ArrayList<VehicleInfo>();
+                Log.v("logmessage",object+"");
                 for (int i = 0; i < object.length(); i++) {
                     try {
                         VehicleInfo info = new VehicleInfo();
@@ -53,14 +60,18 @@ public class BrandbikeList extends AppCompatActivity {
                         info.Transmission = convertToArrayList(object1.getJSONArray("Transmission"));
                         vehicleList.add(info);
                     }
-                    //for (String s: array1) {
-                    //  Log.i("msg", "" + s);
-
                     catch (JSONException e) {
                         e.printStackTrace();
                     }
                 }
-            }
+                Log.v("logmessage",vehicleList.size()+"");
+                for (VehicleInfo s: vehicleList) {
+                    Log.v("logmessage", "" + s.name);
+                }
+                BikeListAdapter bikeListAdapter = new BikeListAdapter(context, vehicleList);
+                container.setAdapter(bikeListAdapter);
+                container.setScrollingCacheEnabled(false);
+                }
 
         });
 
