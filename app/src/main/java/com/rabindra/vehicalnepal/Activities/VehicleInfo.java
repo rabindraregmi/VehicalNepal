@@ -7,6 +7,6 @@ import java.util.ArrayList;
  */
 
 public class VehicleInfo {
-    ArrayList<String>Body,Chassis,Engine,Performance,Transmission;
+    ArrayList<String>Body,Chassis,Engine,Performance,Transmission,FuelConsumption,Dynamics,Dimensions;
     String name,id,image,price;
 }

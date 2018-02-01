@@ -33,9 +33,13 @@
             android:label="@string/title_activity_bike_list_item"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Activities.BikeListActivity" />
+        <activity android:name=".Activities.CarListActivity" />
         <activity android:name=".Activities.BikeDetailPageActivity" />
-        <activity android:name=".Activities.CompareActivity"></activity>
-        <activity android:name=".Activities.BikeHomePageActivity"></activity>
+        <activity android:name=".Activities.CarDetailPageActivity" />
+        <activity android:name=".Activities.BikeHomePageActivity" />
+        <activity android:name=".Activities.CarBrandListActivity" />
+        <activity android:name=".Activities.BikeCompareActivity" />
+        <activity android:name=".Activities.CarCompareActivity"></activity>
     </application>
 
 </manifest>

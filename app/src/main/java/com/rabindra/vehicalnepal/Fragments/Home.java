@@ -1,8 +1,6 @@
 package com.rabindra.vehicalnepal.Fragments;
 
-import android.app.Fragment;
 import android.content.Intent;
-import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.CardView;
@@ -10,7 +8,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.Spinner;
@@ -22,9 +19,8 @@ import com.daimajia.slider.library.SliderLayout;
 import com.daimajia.slider.library.SliderTypes.BaseSliderView;
 import com.daimajia.slider.library.SliderTypes.TextSliderView;
 import com.daimajia.slider.library.Tricks.ViewPagerEx;
-import com.rabindra.vehicalnepal.Activities.BikeHomePageActivity;
-import com.rabindra.vehicalnepal.Activities.HomeActivity;
-import com.rabindra.vehicalnepal.Activities.MainActivity;
+import com.rabindra.vehicalnepal.Activities.BrandListActivity;
+import com.rabindra.vehicalnepal.Activities.CarBrandListActivity;
 import com.rabindra.vehicalnepal.R;
 
 import java.util.HashMap;
@@ -54,6 +50,7 @@ public class Home extends android.support.v4.app.Fragment implements BaseSliderV
         bikebutton=view.findViewById(R.id.bikes);
         carbutton=view.findViewById(R.id.cars);
         bikebutton.setOnClickListener(bikebuttonClickListner);
+        carbutton.setOnClickListener(carbuttonClickListner);
 
 
 
@@ -130,9 +127,18 @@ public class Home extends android.support.v4.app.Fragment implements BaseSliderV
 
         @Override
         public void onClick(View v) {
-            Intent intent = new Intent(getContext(),BikeHomePageActivity.class);
+            Intent intent = new Intent(getContext(),BrandListActivity.class);
            // intent.putExtra("info","This is activity from card item index  "+finalI);
              startActivity(intent);
+        }
+    };
+    private Button.OnClickListener carbuttonClickListner=new Button.OnClickListener(){
+
+        @Override
+        public void onClick(View v) {
+            Intent intent = new Intent(getContext(),CarBrandListActivity.class);
+            // intent.putExtra("info","This is activity from card item index  "+finalI);
+            startActivity(intent);
         }
     };
 

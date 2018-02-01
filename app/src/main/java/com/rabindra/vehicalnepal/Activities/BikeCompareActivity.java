@@ -7,7 +7,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -15,7 +14,7 @@ import android.widget.TextView;
 import com.androidquery.AQuery;
 import com.rabindra.vehicalnepal.R;
 
-public class CompareActivity extends AppCompatActivity {
+public class BikeCompareActivity extends AppCompatActivity {
     ImageView vehicle1add, vehicle2add;
     TextView v1Name, v2Name;
     String body, engine, performance, transmission, chassis, name, image, price;
@@ -42,7 +41,7 @@ public class CompareActivity extends AppCompatActivity {
         vehicle1add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(CompareActivity.this, BrandListActivity.class);
+                Intent intent = new Intent(BikeCompareActivity.this, BrandListActivity.class);
                 intent.putExtra("flag", 1);
                 vehicleNo=1;
                 startActivityForResult(intent, 100);
@@ -52,7 +51,7 @@ public class CompareActivity extends AppCompatActivity {
         vehicle2add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(CompareActivity.this, BrandListActivity.class);
+                Intent intent = new Intent(BikeCompareActivity.this, BrandListActivity.class);
                 intent.putExtra("flag", 1);
                 vehicleNo=2;
                 startActivityForResult(intent, 100);

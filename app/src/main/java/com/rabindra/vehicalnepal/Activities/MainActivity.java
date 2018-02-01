@@ -1,42 +1,27 @@
 package com.rabindra.vehicalnepal.Activities;
 
-import android.app.FragmentTransaction;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.annotation.IdRes;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
-import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.GridLayout;
-import android.widget.SearchView;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.widget.Toolbar;
 
-import com.daimajia.slider.library.Animations.DescriptionAnimation;
 import com.daimajia.slider.library.SliderLayout;
 import com.daimajia.slider.library.SliderTypes.BaseSliderView;
-import com.daimajia.slider.library.SliderTypes.TextSliderView;
 import com.daimajia.slider.library.Tricks.ViewPagerEx;
 import com.miguelcatalan.materialsearchview.MaterialSearchView;
 import com.rabindra.vehicalnepal.Fragments.Home;
 import com.rabindra.vehicalnepal.Fragments.UserInfoFragment;
 import com.rabindra.vehicalnepal.R;
-import com.roughike.bottombar.BottomBar;
-import com.roughike.bottombar.OnTabReselectListener;
-import com.roughike.bottombar.OnTabSelectListener;
-
-
-import java.util.HashMap;
 
 public class MainActivity extends AppCompatActivity implements BaseSliderView.OnSliderClickListener, ViewPagerEx.OnPageChangeListener,OnClickListener {
 
@@ -66,7 +51,7 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
                 case R.id.compare:
 
                     Toast.makeText(MainActivity.this, "Haha", Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(MainActivity.this, CompareActivity.class));
+                    startActivity(new Intent(MainActivity.this, BikeCompareActivity.class));
                     return true;
                 case R.id.person:
                     getSupportFragmentManager().beginTransaction().replace(R.id.welcome,userFragment).commit();
