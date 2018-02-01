@@ -44,7 +44,7 @@ public class BikeHomePageActivity extends AppCompatActivity {
         bikeList.add("um");
         bikeList.add("vespa");
         bikeList.add("yamaha");
-        setContentView(R.layout.bike_brand_list);
+        setContentView(R.layout.grid_view);
         mainGrid = findViewById(R.id.mainGrid);
         setSingleEvent(mainGrid);
     }
