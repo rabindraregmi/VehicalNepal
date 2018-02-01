@@ -25,6 +25,8 @@
                 android:id="@+id/acebritish_logo"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
+                android:layout_height="100dp"
+                android:layout_width="50dp"
                 android:clickable="true"
                 android:focusable="true">
 
@@ -139,6 +141,8 @@
 
             <android.support.v7.widget.CardView
                 android:id="@+id/benelli_logo"
+                android:layout_height="100dp"
+                android:layout_width="50dp"
 
 
                 android:layout_columnWeight="1"
@@ -259,8 +263,8 @@
 
             <android.support.v7.widget.CardView
                 android:id="@+id/hartford_logo"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
+                android:layout_height="100dp"
+                android:layout_width="50dp"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                 android:clickable="true"
@@ -502,7 +506,8 @@
 
             <android.support.v7.widget.CardView
                 android:id="@+id/ktm_logo"
-
+                android:layout_height="100dp"
+                android:layout_width="50dp"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                 android:clickable="true"
@@ -624,8 +629,8 @@
             </android.support.v7.widget.CardView>
             <android.support.v7.widget.CardView
                 android:id="@+id/royalenfield_logo"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
+                android:layout_height="100dp"
+                android:layout_width="50dp"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                 android:clickable="true"
@@ -746,8 +751,8 @@
 
             <android.support.v7.widget.CardView
                 android:id="@+id/terra_logo"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
+                android:layout_height="100dp"
+                android:layout_width="50dp"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                 android:clickable="true"
@@ -787,8 +792,8 @@
 
             <android.support.v7.widget.CardView
                 android:id="@+id/tvs_logo"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
+                android:layout_height="100dp"
+                android:layout_width="50dp"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                 android:clickable="true"
