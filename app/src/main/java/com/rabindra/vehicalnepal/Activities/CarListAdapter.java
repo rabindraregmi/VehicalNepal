@@ -57,7 +57,7 @@ public class CarListAdapter extends ArrayAdapter<VehicleInfo> {
                         context.startActivity(intent);
                     }
                     else{
-                        ((BikeListActivity)context).setValue(info);
+                        ((CarListActivity)context).setValue(info);
                         Toast.makeText(context, "Selected item "+ position, Toast.LENGTH_SHORT).show();
                     }
                 }

@@ -93,30 +93,26 @@ public class CarBrandListActivity extends AppCompatActivity {
                 Log.v("logmsg","Brandlistact onacresult success");
                 if (resultCode == Activity.RESULT_OK) {
                     Log.v("logmsg","Brandlistact onacresult success2");
-                    body = data.getStringExtra("body");
                     engine = data.getStringExtra("engine");
                     performance = data.getStringExtra("performance");
                     transmission = data.getStringExtra("transmission");
-                    chassis = data.getStringExtra("chassis");
                     name = data.getStringExtra("name");
                     image = data.getStringExtra("image");
                     price = data.getStringExtra("price");
-                    fuelConsumption=data.getStringExtra("FuelConsumption");
-                    dynamics=data.getStringExtra("Dynamics");
-                    dimensions=data.getStringExtra("Dimensions");
+                    fuelConsumption=data.getStringExtra("fuel");
+                    dynamics=data.getStringExtra("dynamics");
+                    dimensions=data.getStringExtra("dimensions");
 
                     Log.v("logmsg","Brandlistact onacresult : "+body);
                     Intent intent = new Intent();
-                   intent.putExtra("body", body);
                     intent.putExtra("engine", engine);
                     intent.putExtra("performance", performance);
-                    intent.putExtra("Transmission", transmission);
-                    intent.putExtra("fuelconsumption", fuelConsumption);
+                    intent.putExtra("transmission", transmission);
+                    intent.putExtra("fuel", fuelConsumption);
                     intent.putExtra("name", name);
                     intent.putExtra("image", image);
                     intent.putExtra("price", price);
                     intent.putExtra("dynamics", dynamics);
-                    intent.putExtra("chassis", chassis);
                     intent.putExtra("dimensions", dimensions);
                     setResult(Activity.RESULT_OK, intent);
                     finish();

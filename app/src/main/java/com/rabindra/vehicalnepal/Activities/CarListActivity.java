@@ -98,17 +98,15 @@ public class CarListActivity extends AppCompatActivity {
     public void setValue(VehicleInfo info){
         Intent intent = new Intent();
         Log.v("logmsg",info+"");
-        intent.putExtra("body", formatString(info.Body));
         intent.putExtra("engine", formatString(info.Engine));
         intent.putExtra("performance", formatString(info.Performance));
-        intent.putExtra("Transmission", formatString(info.Transmission));
-        intent.putExtra("fuelconsumption", formatString(info.FuelConsumption));
+        intent.putExtra("transmission", formatString(info.Transmission));
+        intent.putExtra("fuel", formatString(info.FuelConsumption));
         intent.putExtra("name", info.name);
         intent.putExtra("image", info.image);
         intent.putExtra("price", info.price);
-        intent.putExtra("dynamics", info.Dynamics);
-        intent.putExtra("chassis", info.Chassis);
-        intent.putExtra("Dimensions", info.Dimensions);
+        intent.putExtra("dynamics", formatString(info.Dynamics));
+        intent.putExtra("dimensions", formatString(info.Dimensions));
 
         setResult(Activity.RESULT_OK, intent);
         finish();

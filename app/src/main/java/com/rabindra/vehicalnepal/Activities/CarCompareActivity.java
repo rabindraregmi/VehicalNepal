@@ -18,7 +18,7 @@ public class CarCompareActivity extends AppCompatActivity {
 
     ImageView vehicle1add, vehicle2add;
     TextView v1Name, v2Name;
-    String body, engine, performance, transmission, chassis, name, image, price;
+    String fuel, dimensions, engine, performance, transmission, dynamics, name, image, price;
     LinearLayout compareItems;
     Button compareNow;
     Boolean v1=false, v2=false;
@@ -29,7 +29,7 @@ public class CarCompareActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.compare);
+        setContentView(R.layout.car_compare);
         aQuery=new AQuery(this);
         vehicle1add = findViewById(R.id.vehicle1Image);
         vehicle2add = findViewById(R.id.vehicle2Image);
@@ -52,7 +52,7 @@ public class CarCompareActivity extends AppCompatActivity {
         vehicle2add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(CarCompareActivity.this, BrandListActivity.class);
+                Intent intent = new Intent(CarCompareActivity.this, CarBrandListActivity.class);
                 intent.putExtra("flag", 1);
                 vehicleNo=2;
                 startActivityForResult(intent, 100);
@@ -79,11 +79,12 @@ public class CarCompareActivity extends AppCompatActivity {
         switch (requestCode) {
             case (100): {
                 if (resultCode == Activity.RESULT_OK) {
-                    body = data.getStringExtra("body");
+                    transmission = data.getStringExtra("transmission");
                     engine = data.getStringExtra("engine");
                     performance = data.getStringExtra("performance");
-                    transmission = data.getStringExtra("transmission");
-                    chassis = data.getStringExtra("chassis");
+                    dynamics = data.getStringExtra("dynamics");
+                    dimensions = data.getStringExtra("dimensions");
+                    fuel = data.getStringExtra("fuel");
                     name = data.getStringExtra("name");
                     image = data.getStringExtra("image");
                     price = data.getStringExtra("price");
@@ -94,22 +95,24 @@ public class CarCompareActivity extends AppCompatActivity {
             v1 = true;
             aQuery.id(vehicle1add).image(image);
             ((TextView)findViewById(R.id.name1)).setText(name);
-            ((TextView)findViewById(R.id.body1)).setText(body);
-            ((TextView)findViewById(R.id.engine1)).setText(engine);
-            ((TextView)findViewById(R.id.performance1)).setText(performance);
-            ((TextView)findViewById(R.id.chassis1)).setText(chassis);
             ((TextView)findViewById(R.id.transmission1)).setText(transmission);
+            ((TextView)findViewById(R.id.engine1)).setText(engine);
+            ((TextView)findViewById(R.id.dynamics1)).setText(dynamics);
+            ((TextView)findViewById(R.id.performance1)).setText(performance);
+            ((TextView)findViewById(R.id.dimensions1)).setText(dimensions);
+            ((TextView)findViewById(R.id.fuel1)).setText(fuel);
             ((TextView)findViewById(R.id.price1)).setText(price);
         }
         else if (vehicleNo==2){
             v2 = true;
             aQuery.id(vehicle2add).image(image);
             ((TextView)findViewById(R.id.name2)).setText(name);
-            ((TextView)findViewById(R.id.body2)).setText(body);
-            ((TextView)findViewById(R.id.engine2)).setText(engine);
-            ((TextView)findViewById(R.id.performance2)).setText(performance);
-            ((TextView)findViewById(R.id.chassis2)).setText(chassis);
             ((TextView)findViewById(R.id.transmission2)).setText(transmission);
+            ((TextView)findViewById(R.id.engine2)).setText(engine);
+            ((TextView)findViewById(R.id.dynamics2)).setText(dynamics);
+            ((TextView)findViewById(R.id.performance2)).setText(performance);
+            ((TextView)findViewById(R.id.dimensions2)).setText(dimensions);
+            ((TextView)findViewById(R.id.fuel2)).setText(fuel);
             ((TextView)findViewById(R.id.price2)).setText(price);
         }
 
