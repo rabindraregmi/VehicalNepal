@@ -61,7 +61,7 @@ public class BikeHomePageActivity extends AppCompatActivity {
                 public void onClick(View view) {
                     Log.v("logmessage",finalI+"");
                     String bikeName = bikeList.get(finalI);
-                    Intent intent = new Intent(BikeHomePageActivity.this, BrandbikeList.class);
+                    Intent intent = new Intent(BikeHomePageActivity.this, BrandListActivity.class);
                     intent.putExtra("url", bikeName);
                     Log.v("logmessage", bikeName);
                     startActivity(intent);

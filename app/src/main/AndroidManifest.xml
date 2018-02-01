@@ -35,6 +35,7 @@
         <activity android:name=".Activities.BikeListActivity" />
         <activity android:name=".Activities.BikeDetailPageActivity" />
         <activity android:name=".Activities.CompareActivity"></activity>
+        <activity android:name=".Activities.BikeHomePageActivity"></activity>
     </application>
 
 </manifest>
