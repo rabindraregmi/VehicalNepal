@@ -2,6 +2,7 @@ package com.rabindra.vehicalnepal.Activities;
 
 import android.app.FragmentTransaction;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.IdRes;
@@ -64,6 +65,7 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
                 case R.id.compare:
 
                     Toast.makeText(MainActivity.this, "Haha", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(MainActivity.this, CompareActivity.class));
                     return true;
                 case R.id.person:
                     getSupportFragmentManager().beginTransaction().replace(R.id.welcome,userFragment).commit();

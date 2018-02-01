@@ -1,6 +1,8 @@
 package com.rabindra.vehicalnepal.Activities;
 
+import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -18,10 +20,11 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-public class BrandbikeList extends AppCompatActivity {
+public class BikeListActivity extends AppCompatActivity {
     AQuery aQuery;
     String baseUrl="http://192.168.100.199/vehicle/new/bikeData/";
     String intentExtra = "fail";
+    int flag;
     ListView container;
     Context context;
     @Override
@@ -32,6 +35,7 @@ public class BrandbikeList extends AppCompatActivity {
         context = this;
         aQuery=new AQuery(this);
         intentExtra= getIntent().getStringExtra("url");
+        flag= getIntent().getIntExtra("flag",0);
         Log.v("logmessage",intentExtra);
         fetchurl(baseUrl+intentExtra+"Data");
 
@@ -68,7 +72,7 @@ public class BrandbikeList extends AppCompatActivity {
                 for (VehicleInfo s: vehicleList) {
                     Log.v("logmessage", "" + s.name);
                 }
-                BikeListAdapter bikeListAdapter = new BikeListAdapter(context, vehicleList);
+                BikeListAdapter bikeListAdapter = new BikeListAdapter(context, vehicleList, flag);
                 container.setAdapter(bikeListAdapter);
                 container.setScrollingCacheEnabled(false);
                 }
@@ -89,5 +93,28 @@ public class BrandbikeList extends AppCompatActivity {
             }
         }
         return listdata;
+    }
+
+    public void setValue(VehicleInfo info){
+        Intent intent = new Intent();
+        Log.v("logmsg",info+"");
+        intent.putExtra("body", formatString(info.Body));
+        intent.putExtra("engine", formatString(info.Engine));
+        intent.putExtra("performance", formatString(info.Performance));
+        intent.putExtra("transmission", formatString(info.Transmission));
+        intent.putExtra("chassis", formatString(info.Chassis));
+        intent.putExtra("name", info.name);
+        intent.putExtra("image", info.image);
+        intent.putExtra("price", info.price);
+        setResult(Activity.RESULT_OK, intent);
+        finish();
+    }
+
+    public String formatString(ArrayList<String> arr){
+        StringBuilder builder = new StringBuilder();
+        for (String details : arr) {
+            builder.append(details + "\n\n");
+        }
+        return builder.toString();
     }
 }

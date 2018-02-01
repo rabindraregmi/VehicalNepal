@@ -27,13 +27,14 @@
             android:name=".Activities.LightToolbarActivity"
             android:label="@string/title_activity_light_toolbar"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Activities.BikeHomePageActivity" />
+        <activity android:name=".Activities.BrandListActivity" />
         <activity
             android:name=".Activities.BikeListItemActivity"
             android:label="@string/title_activity_bike_list_item"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Activities.BrandbikeList" />
-        <activity android:name=".Activities.BikeDetailPageActivity"></activity>
+        <activity android:name=".Activities.BikeListActivity" />
+        <activity android:name=".Activities.BikeDetailPageActivity" />
+        <activity android:name=".Activities.CompareActivity"></activity>
     </application>
 
 </manifest>
