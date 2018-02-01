@@ -19,6 +19,7 @@ import com.daimajia.slider.library.SliderLayout;
 import com.daimajia.slider.library.SliderTypes.BaseSliderView;
 import com.daimajia.slider.library.Tricks.ViewPagerEx;
 import com.miguelcatalan.materialsearchview.MaterialSearchView;
+import com.rabindra.vehicalnepal.Fragments.CompareFragment;
 import com.rabindra.vehicalnepal.Fragments.Home;
 import com.rabindra.vehicalnepal.Fragments.UserInfoFragment;
 import com.rabindra.vehicalnepal.R;
@@ -35,6 +36,7 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
 
 
     Home home=new Home();
+    CompareFragment compareFragment = new CompareFragment();
     UserInfoFragment userFragment=new UserInfoFragment();
 
 
@@ -49,9 +51,7 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
 
                     return true;
                 case R.id.compare:
-
-                    Toast.makeText(MainActivity.this, "Haha", Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(MainActivity.this, BikeCompareActivity.class));
+                    getSupportFragmentManager().beginTransaction().replace(R.id.welcome, compareFragment).commit();
                     return true;
                 case R.id.person:
                     getSupportFragmentManager().beginTransaction().replace(R.id.welcome,userFragment).commit();

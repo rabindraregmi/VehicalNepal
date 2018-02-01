@@ -63,6 +63,7 @@ public class BikeListAdapter extends ArrayAdapter<VehicleInfo> {
 
         aquery.id(image).image(info.image);
         name.setText(info.name);
+        ((TextView)view.findViewById(R.id.price)).setText(info.price);
         return view;
     }
 

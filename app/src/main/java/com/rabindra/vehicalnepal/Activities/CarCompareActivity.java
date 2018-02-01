@@ -42,7 +42,7 @@ public class CarCompareActivity extends AppCompatActivity {
         vehicle1add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(CarCompareActivity.this, BrandListActivity.class);
+                Intent intent = new Intent(CarCompareActivity.this, CarBrandListActivity.class);
                 intent.putExtra("flag", 1);
                 vehicleNo=1;
                 startActivityForResult(intent, 100);
